@@ -1,3 +1,188 @@
 #App {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+#home-css {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+    120deg,
+    white,
+    white,
+    white,
+    white,
+    black,
+    black,
+    black,
+    black
+  );
+}
+#home-hero {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#home-title {
+  font-size: 80px;
+}
+#home-title,
+#home-card {
+  margin: 0 5%;
+}
+#home-card {
+  background: white;
+  height: 300px;
+  width: 300px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+#home-card ul {
+  list-style: none;
+  padding: 0;
+}
+#home-card ul li {
+  margin: 16px 0;
+}
+#home-card h1 {
+  font-size: 40px;
+}
+.home-anchor,
+#portfolio-link {
+  position: absolute;
+  margin-left: 8px;
+  color: black;
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
+}
+.home-anchor:link,
+#portfolio-link:link {
+  color: black;
+  text-decoration: none;
+}
+.home-anchor:visited,
+#portfolio-link:visited {
+  color: black;
+  text-decoration: none;
+}
+.home-anchor:hover,
+#portfolio-link:hover {
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+}
+.home-anchor:active,
+#portfolio-link:active {
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+}
+li {
+  position: relative;
+}
+.favicon {
+  width: 20px;
+  height: 20px;
+}
+#home-sidekick {
+  display: flex;
+}
+#arrow {
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  bottom: 300px;
+  left: 120px;
+}
+#portfolio-link {
+  position: absolute;
+  bottom: 300px;
+  left: 300px;
+  font-size: 50px;
+}
 
+#header-css {
+  position: fixed;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  background-color: rgb(36, 36, 36);
+  display: flex;
+  justify-content: center;
+}
+#header-title {
+  color: white;
+  font-size: 40px;
+}
+#return-link {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 24px;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+#return-link:hover, #return-link:active {
+  font-weight: 900;
+}
+#footer-title {
+  margin-top: auto;
+}
+#portfolio-css {
+  display: flex;
+  width: 100%;
+  overflow-x: hidden;
+}
+#project-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+}
+.project-css {
+  width: 800px;
+  height: 500px;
+  margin: 12px 16px;
+  padding: 12px;
+  border: dotted 1px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(199, 216, 231);
+}
+.project-title {
+  font-size: 32px;
+  margin-bottom: 12px;
+  color: black;
+  transition: all 0.1s ease-in-out;
+  padding: 8px 0;
+}
+.project-title:hover, .project-title:active {
+  font-weight: 900;
+}
+.project-picture {
+  width: 600px;
+  height: 300px;
+}
+.project-description {
+  margin-top: 36px;
+  padding: 0 24px;
+}
+#footer-css {
+  position: fixed;
+  bottom: 0;
+  height: 30px;
+  width: 100%;
+  background-color: rgb(36, 36, 36);
+  display: flex;
+  justify-content: center;
+  color: white;
 }
