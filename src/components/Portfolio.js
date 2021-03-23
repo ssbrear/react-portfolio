@@ -45,6 +45,13 @@ const ProjectData = [
       "This is the first page I made using jQuery, and it was nice to not have to write as much code for the same functionality. The most frustrating part of this assignment is that I could not figure out how to make text sizes responsive without resorting to either media queries in CSS or an event listener in JS (I picked the media queries).",
     Link: "https://ssbrear.github.io/tic-tac-toe/",
   },
+  {
+    Title: "MagicSMS",
+    Image: "https://i.ibb.co/nw7dStM/magicSMS.png",
+    Description:
+      "This is the first page I created after graduating from the bootcamp that I attended. I worked with John Baxter, a fellow graduate and I was personally responsible for all of the front-end development.",
+    Link: "http://www.a-zsms.com/",
+  }
 ];
 
 function Portfolio(props) {
@@ -55,6 +62,7 @@ function Portfolio(props) {
         {ProjectData.map((project, i) => (
           <Project key={i} data={project} />
         ))}
+        <div id="gap"></div>
       </div>
       <Footer />
     </div>
